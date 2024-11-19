@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+
+  <title>Magic Square Game</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Magic Square Game</h1>
+    <p>Fill the grid so that the sum of each row, column, and diagonal equals 15. Numbers must be 1-9, no repeats, and 5 is fixed in the center.</p>
+    
+    <div class="grid" id="grid">
+      <div class="cell"><input type="number" min="1" max="9" data-id="0"></div>
+      <div class="cell"><input type="number" min="1" max="9" data-id="1"></div>
+      <div class="cell"><input type="number" min="1" max="9" data-id="2"></div>
+      <div class="cell"><input type="number" min="1" max="9" data-id="3"></div>
+      <div class="cell center">5</div>
+      <div class="cell"><input type="number" min="1" max="9" data-id="4"></div>
+      <div class="cell"><input type="number" min="1" max="9" data-id="5"></div>
+      <div class="cell"><input type="number" min="1" max="9" data-id="6"></div>
+      <div class="cell"><input type="number" min="1" max="9" data-id="7"></div>
+    </div>
+    <div class="btns">
+      <button class="btn" onclick="checkSolution()">Check Solution</button>
+      <a href="squareSolve.html" class="btn">Magic Square Solver</a>
+    </div>
+    <p id="result"></p>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
